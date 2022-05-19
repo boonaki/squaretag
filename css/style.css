@@ -60,16 +60,16 @@ h1:first-of-type{
   height: 22.5%;
   background: black;
 }
-/* .game section{
+.game section{
   border: 1px solid white;
-} */
+}
 
 .hidden{
   display: none;
 }
-.visibility{
+/* .visibility{
   visibility: hidden;
-}
+} */
 
 .greenBack{
   background: green;
