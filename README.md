@@ -1,6 +1,6 @@
 # Square Tag
 The goal of this game is to tag the square! The square will be running away from your cursor.
-This game is not available on mobile devices due to game beign cursor dependent.
+This game is not available on mobile devices due to game being cursor dependent.
 
 **Link to project:** https://squaretag.netlify.app/
 
