@@ -3,7 +3,7 @@ let start = document.querySelector(".start")
 start.addEventListener("click", startGame)
 
 //creates delay for timeout
-let delay = 260;
+let delay = 240;
 
 //creates new array obj
 const arrOfBoxes = new ArrofBoxes()
