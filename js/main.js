@@ -18,8 +18,9 @@ let count = 0
 
 //variables declared related to winning
 let gameWon = false
-// let winCount =  0
-// let winElement = document.querySelector('#winCount')
+
+//TODO: add high score?
+//TODO: create winning animation
 
 
 function ArrofBoxes(){ //object for boxes
@@ -48,11 +49,6 @@ function countClicks(){ //will count clicks until game won
         clickerCount.innerHTML = count
     }
 }
-
-// function countWins(){
-//     winCount += 1
-//     winElement.innerHTML = winCount
-// }
 
 function resetGame(){ //resets game
     start.classList.remove('hidden')
@@ -94,7 +90,7 @@ function green(click){ //winning function
     gameWon = true
     winningAnimation()
 }
-
+ //TODO: create winning animation
 function winningAnimation(){
     alert('you won!')
 }
