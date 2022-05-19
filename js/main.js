@@ -35,6 +35,7 @@ function ArrofBoxes(){ //object for boxes
 
 function startGame(){ //starts game
     start.classList.add('hidden')
+    playAgain.classList.toggle('hidden')
     let theGame = document.querySelector('.game')
     theGame.classList.toggle('hidden')
     theGame.addEventListener("click", countClicks)
@@ -60,6 +61,7 @@ function resetGame(){ //resets game
         element.classList.remove('visibility')
         element.classList.add('visibility')
     })
+    playAgain.classList.toggle('hidden')
     count = 0
     clickerCount.innerHTML = count
 }
