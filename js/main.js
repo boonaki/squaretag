@@ -1,28 +1,47 @@
 //grab start, add listener to start and remove display on click
-document.querySelector(".start").addEventListener("click", startgame)
+let start = document.querySelector(".start")
+start.addEventListener("click", startGame)
+
+//creates delay for timeout
 let delay = 280;
-function startgame(){
-    document.querySelector(".start").classList.add('hidden')
+
+//creates new array obj
+const arrOfBoxes = new ArrofBoxes()
+
+
+function startGame(){ //starts game
+    start.classList.add('hidden')
     document.querySelector('.game').classList.toggle('hidden')
     findNewSec()
 }
-function findNewSec(){
-    // grab the sections in div, put into array. 
-    const boxes = document.querySelectorAll('.box')
 
-    const boxBox = Array.from(boxes)
+function resetGame(){ //resets game
+    start.classList.remove('hidden')
+}
+
+function ArrofBoxes(){ //object for boxes
+    const boxes = document.querySelectorAll('.box')
+    this.arr = Array.from(boxes)
+    this.makeArray = function(){
+        return this.arr;
+    }
+    this.grabBox = function(){
+        return this.arr[Math.floor(Math.random() * this.arr.length)];
+    }
+}
+
+function findNewSec(){ //finds random section to be tagged
+    let randSec = arrOfBoxes.grabBox()
     //make random section clickable and reset on click
-    let randSec = boxBox[Math.floor(Math.random() * boxBox.length)];
     randSec.classList.toggle('visibility')
     randSec.addEventListener('click', green)
     
     setTimeout(function(){
          randSec.addEventListener('mouseenter', reset)
     }, delay);
-    
 }
 
-function reset(mouseenter){ //resets
+function reset(mouseenter){ //resets on hover
     if(mouseenter.target.classList.contains('greenBack')){
         return 0;
     }else{
@@ -31,8 +50,13 @@ function reset(mouseenter){ //resets
     }
 }
 
-function green(click){
+function green(click){ //winning function
     click.target.classList.add('greenBack')
     click.target.classList.remove('visibility')
-    alert("you won")
+    winningAnimation();
+}
+
+function winningAnimation(){
+    
+
 }

@@ -28,7 +28,7 @@ body{
 /******************************************
 /* LAYOUT
 /*******************************************/
-body > section{
+#startScreen{
   width: 100%;
   height: 50vh;
   text-align: center;
@@ -38,6 +38,9 @@ body > section{
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+#playAgain{
+  cursor: pointer;
 }
 
 h1:first-of-type{
@@ -55,16 +58,16 @@ h1:first-of-type{
   height: 22.5%;
   background: black;
 }
-.game section{
+/* .game section{
   border: 1px solid white;
-}
+} */
 
 .hidden{
   display: none;
 }
-/* .visibility{
+.visibility{
   visibility: hidden;
-} */
+}
 
 .greenBack{
   background: green;
