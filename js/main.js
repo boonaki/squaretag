@@ -8,11 +8,25 @@ let delay = 280;
 //creates new array obj
 const arrOfBoxes = new ArrofBoxes()
 
+const playAgain = document.querySelector('#playAgain')
+playAgain.addEventListener("click", resetGame)
+
+let clickerCount = document.querySelector('#clickCount')
+
+let count = 0
+
 
 function startGame(){ //starts game
     start.classList.add('hidden')
-    document.querySelector('.game').classList.toggle('hidden')
+    let theGame = document.querySelector('.game')
+    theGame.classList.toggle('hidden')
+    theGame.addEventListener("click", countClicks)
     findNewSec()
+}
+
+function countClicks(){
+    count += 1
+    clickerCount.innerHTML = count
 }
 
 function resetGame(){ //resets game
@@ -57,6 +71,5 @@ function green(click){ //winning function
 }
 
 function winningAnimation(){
-    
 
 }
