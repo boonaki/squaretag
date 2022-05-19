@@ -28,6 +28,13 @@ body{
 /******************************************
 /* LAYOUT
 /*******************************************/
+#gameOverlay{
+  height: 100vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 #startScreen{
   width: 100%;
   height: 50vh;
@@ -78,3 +85,9 @@ h1:first-of-type{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-height: 1200px) and (max-width: 1500px){
+  #gameOverlay{
+    display: flex;
+  }
+}
