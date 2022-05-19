@@ -1,5 +1,6 @@
 # Square Tag
 The goal of this game is to tag the square! The square will be running away from your cursor.
+This game is not available on mobile devices due to game beign cursor dependent.
 
 **Link to project:** https://squaretag.netlify.app/
 
@@ -11,16 +12,15 @@ The goal of this game is to tag the square! The square will be running away from
 
 **Tech used:** HTML, CSS, JavaScript
 
-After sketching a wireframe of the project, I used basic JS to find each box, adding and removing functionality on click, depending on which click was first. I added a timeout to when the box will "run" to give the player a better chance at hitting the box. I was forced to play with the difficulty to ensure it was possile, yet still challenging
+To win the game, one must tag the square and if done correctly the square will become green and the player will be alerted of their victory. Each square is given 2 outcomes, either hiding itself and presenting another square, or turning green and giving the alert. The former being given a 'mouseenter' event listener and the latter being given a 'click' event listener. You are essentially racing the computer to force it to accept the click before the mouseenter function runs, which will hide the square that you are supposed to click.
 
-<!-- ## Optimizations
-*(optional)*
+## Optimizations
 
-You don't have to include this section but interviewers *love* that you can not only deliver a final product that looks great but also functions efficiently. Did you write something then refactor it later and the result was 5x faster than the original implementation? Did you cache your assets? Things that you write in this section are **GREAT** to bring up in interviews and you can use this section as reference when studying for technical interviews! -->
+After having the base frame down, I realized that the code had often repeated itself at multiple points. I refactored the code to be more readible and more effecient by grouping similar functions together and providing better comments to explain the process.
 
 ## Lessons Learned:
 
-During the process of building this project, I had originally failed to use any sort of OOP practices and thus my code was consequently very WET. It repeated itself at multiple points, but I was able to go back in and make the code more readible with better comments, more efficient by removing repeated lines and taking advantage of encapsulation and even including a HUD with a click count. 
+While building the HUD, I ran into problems with the click count and play again that was due to my own spaghetti code of a baseframe. I had refactored the JS to be more readible, which allowed me to easily spot what was causing the issue and promptly fixed it.
 
 ## Examples:
 Take a look at these couple examples where I used similar practices.
