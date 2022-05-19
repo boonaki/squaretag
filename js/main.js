@@ -64,6 +64,7 @@ function resetGame(){ //resets game
     playAgain.classList.toggle('hidden')
     count = 0
     clickerCount.innerHTML = count
+    gameWon = false
 }
 
 
