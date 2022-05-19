@@ -21,11 +21,9 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+body{
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -35,6 +33,13 @@ body > section{
   height: 50vh;
   text-align: center;
 }
+#hud{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 h1:first-of-type{
   margin-top: 20%;
 }
@@ -46,8 +51,8 @@ h1:first-of-type{
 }
 .box{
   float: left;
-  width: 12.5%;
-  height: 25%;
+  width: 10%;
+  height: 22.5%;
   background: black;
 }
 .game section{
@@ -57,9 +62,9 @@ h1:first-of-type{
 .hidden{
   display: none;
 }
-.visibility{
+/* .visibility{
   visibility: hidden;
-}
+} */
 
 .greenBack{
   background: green;
