@@ -16,7 +16,7 @@ To win the game, one must tag the square and if done correctly the square will b
 
 ## Optimizations
 
-After having the base frame down, I realized that the code had often repeated itself at multiple points. I refactored the code to be more readible and more effecient by grouping similar functions together and providing better comments to explain the process.
+After having the base frame down, I realized that the code had often repeated itself at multiple points. I refactored the code to be more readible and more efficient by grouping similar functions together and providing better comments to explain the process.
 
 ## Lessons Learned:
 
