@@ -4,9 +4,7 @@ This game is not available on mobile devices due to game being cursor dependent.
 
 **Link to project:** https://squaretag.netlify.app/
 
-![alt tag](https://user-images.githubusercontent.com/91851563/169212550-78d6a684-4075-4254-96a2-20d65243921d.png)
-
-![alt tag](https://user-images.githubusercontent.com/91851563/169212701-31708918-93c8-4799-ab04-cb6b313ac6d7.png)
+<img src="imgs/squaregame.gif">
 
 ## How It's Made:
 
@@ -25,7 +23,7 @@ While building the HUD, I ran into problems with the click count and play again 
 ## Examples:
 Take a look at these couple examples where I used similar practices.
 
-**Coding Challlenges:** https://github.com/boonaki/CodingChallenges
+**MC Modpack Discovery:** https://github.com/boonaki/mc-modpackdb
 
 **HH Tic Tac Toe:** https://github.com/boonaki/HHTicTacToe
 
