@@ -28,7 +28,7 @@ body{
 /******************************************
 /* LAYOUT
 /*******************************************/
-#gameOverlay{
+#unsupportedOverlay{
   height: 100vh;
   width: 100%;
   display: none;
@@ -87,7 +87,13 @@ h1:first-of-type{
 /*******************************************/
 
 @media screen and (max-height: 1200px) and (max-width: 1500px){
-  #gameOverlay{
+  #unsupportedOverlay{
     display: flex;
+  }
+  #startScreen{
+    display: none;
+  }
+  #hud{
+    display: none;
   }
 }

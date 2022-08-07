@@ -40,7 +40,7 @@ function ArrofBoxes(){ //object for boxes
 
 function startGame(){ //starts game
     start.classList.add('hidden')
-    playAgain.classList.toggle('hidden')
+    document.querySelector('#clickContainer').classList.remove('visibility')
     let theGame = document.querySelector('.game')
     theGame.classList.toggle('hidden')
     theGame.addEventListener("click", countClicks)
@@ -61,7 +61,8 @@ function resetGame(){ //resets game
         element.classList.remove('visibility')
         element.classList.add('visibility')
     })
-    playAgain.classList.toggle('hidden')
+    playAgain.classList.add('visibility')
+    document.querySelector('#clickContainer').classList.add('visibility')
     count = 0
     clickerCount.innerHTML = count
     gameWon = false
@@ -79,6 +80,7 @@ function reset(mouseenter){ //resets on hover
 function green(click){ //winning function
     click.target.classList.add('greenBack')
     click.target.classList.remove('visibility')
+    playAgain.classList.remove('visibility')
     gameWon = true
     winningAnimation()
 }
