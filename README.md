@@ -1,6 +1,6 @@
 # Square Tag
 The goal of this game is to tag the square! The square will be running away from your cursor.
-This game is not available on mobile devices due to game beign cursor dependent.
+This game is not available on mobile devices due to game being cursor dependent.
 
 **Link to project:** https://squaretag.netlify.app/
 
@@ -10,13 +10,13 @@ This game is not available on mobile devices due to game beign cursor dependent.
 
 ## How It's Made:
 
-**Tech used:** HTML, CSS, JavaScript
+**Tech used:** HTML, CSS, JavaScript, Node.js
 
 To win the game, one must tag the square and if done correctly the square will become green and the player will be alerted of their victory. Each square is given 2 outcomes, either hiding itself and presenting another square, or turning green and giving the alert. The former being given a 'mouseenter' event listener and the latter being given a 'click' event listener. You are essentially racing the computer to force it to accept the click before the mouseenter function runs, which will hide the square that you are supposed to click.
 
 ## Optimizations
 
-After having the base frame down, I realized that the code had often repeated itself at multiple points. I refactored the code to be more readible and more effecient by grouping similar functions together and providing better comments to explain the process.
+After having the base frame down, I realized that the code had often repeated itself at multiple points. I refactored the code to be more readible and more efficient by grouping similar functions together and providing better comments to explain the process.
 
 ## Lessons Learned:
 
