@@ -3,7 +3,7 @@ let start = document.querySelector(".start")
 start.addEventListener("click", startGame)
 
 //creates delay for timeout
-let delay = 220;
+let delay = 240;
 
 //creates playAgain constant for ease of access
 const playAgain = document.querySelector('#playAgain')
